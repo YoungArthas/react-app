@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY . .
+COPY src .
 
 RUN npm i && npm run build
 RUN npm i -g serve
